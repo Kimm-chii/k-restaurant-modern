@@ -27,7 +27,7 @@ export const MenuItemModal: React.FC<MenuItemModalProps> = ({ item, onClose }) =
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
-            className="bg-zinc-900 border border-zinc-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col"
+            className="bg-zinc-900 border border-zinc-800 rounded-3xl max-w-2xl w-full max-h-[calc(var(--sh,1vh)*90)] overflow-y-auto shadow-2xl relative flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}

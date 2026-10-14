@@ -151,7 +151,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectItem }) => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 12, scale: 0.95 }}
                     transition={{ duration: 0.2, ease: 'easeOut' }}
-                    className="mb-2 p-2 bg-zinc-950/95 backdrop-blur-2xl border border-zinc-800/90 shadow-2xl shadow-black/90 rounded-2xl w-48 flex flex-col gap-1 max-h-[55vh] overflow-y-auto custom-scrollbar"
+                    className="mb-2 p-2 bg-zinc-950/95 backdrop-blur-2xl border border-zinc-800/90 shadow-2xl shadow-black/90 rounded-2xl w-48 flex flex-col gap-1 max-h-[calc(var(--sh,1vh)*55)] overflow-y-auto custom-scrollbar"
                   >
                     <div className="px-3 py-1.5 text-[10px] uppercase font-extrabold tracking-wider text-amber-400 border-b border-zinc-800/80 mb-1 flex items-center justify-between">
                       <span>Jump to Category</span>

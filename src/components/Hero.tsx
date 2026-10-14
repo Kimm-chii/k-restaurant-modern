@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onConnectLinks }) => 
   const status = useMemo(() => getEstablishmentStatus(), []);
 
   return (
-    <section id="hero" className="relative min-h-[92vh] pt-28 pb-16 flex items-center justify-center overflow-hidden scroll-mt-14">
+    <section id="hero" className="relative min-h-[calc(var(--sh,1vh)*92)] pt-28 pb-16 flex items-center justify-center overflow-hidden scroll-mt-14">
       {/* Background Image with Dark Gradient & Lantern Glow Overlay */}
       <div className="absolute inset-0 z-0">
         <img
